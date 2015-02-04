@@ -1,5 +1,8 @@
+@import url(map.css);
+
 /*
 *	$header-black			#353535	rgb(53, 53, 53)
+*	$whitePlain				#ffffff	rgb(255,255,255)
 */
 
 html, body {
@@ -21,61 +24,28 @@ html, body {
 	max-width: 65px;
 }
 
-.days-menu, .options-menu {
+.days-btn, .options-btn {
 	color:#5C9EFF;
 }
 
-/* ++++++++++++++ MAP ++++++++++++++ */
+/* ++++++++++++++ MAP ++++++++++++++ 
 
-main {
-	position: relative;
-}
+	See map.css
 
-#map {
-	height: 450px;
-}
-
-/* ------- Menu items ------- */
-
-.days-menu-items, .options-menu-items {
-	font-size: 1.5em;
-	background: rgba(122, 176, 231,0.9);
-	display: none;
-	position: absolute;
-	/*top:50px;*/
-	z-index: 2;
-}
-
-.days-menu-items {
-	left: 0;
-}
-
-.options-menu-items {
-	right: 0;
-}
-
-.days-menu-items a, .options-menu-items a {
-	color: white;
-	text-decoration: none;
-	padding: 1em;
-	width: 100%;
-}
-
-/* ++++++++++++++ FOOTER ++++++++++++++ */
+ ++++++++++++++ FOOTER ++++++++++++++ */
 
 .footer .img-cont {
 	margin:0 auto;
 	max-width: 300px;
 }
 
-.help-menu {
-	color: red;
+.help-btn {
+	color: #ffffff;
 }
-
 
 /* ++++++++++++++ GENERAL CLASSES ++++++++++++++ */
 
-.menu {
+.menu-btn {
 	text-transform: uppercase;
 	font-size: 2.5em;
 	background: transparent;
