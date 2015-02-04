@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Deal Seeker</title>
+
+	<!-- For proper rendering across all devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- FONT AWESOME & BOOTSTRAP -->
+	<link rel="stylesheet" href="libs/font-awesome/font-awesome-4.2.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-3.3.1/css/bootstrap.min.css">
+
+	<!-- MY STYLES -->
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+	<div class="container">
+		<!-- ======= HEADER ======= -->
+		<header class="row header">
+
+			<!-- Days Menu -->
+			<div class="col-xs-3 text-left">
+				<button class="menu days-menu">days</button>
+			</div>
+
+			<!-- Logo -->
+			<div class="col-xs-6 logo">
+				<div class="img-cont">
+					<img src="media/images/logo.png" alt="Deal Seeker Logo">
+				</div>
+			</div>
+
+			<!-- Options Menu -->
+			<div class="col-xs-3 text-right">
+				<button class="menu options-menu">options</button>
+			</div>
+		</header>
+
+		<!-- ======= MAP ======= -->
+
+		<main class="row">
+
+			<!-- Days Menu Items -->
+			<nav class="days-menu-items">
+				<ul>
+					<li><a href="">monday</a></li>
+					<li><a href="">tuesday</a></li>
+					<li><a href="">wednesday</a></li>
+					<li><a href="">thursday</a></li>
+					<li><a href="">friday</a></li>
+					<li><a href="">saturday</a></li>
+					<li><a href="">sunday</a></li>
+				</ul>
+			</nav>
+
+			<!-- Options Menu Items -->
+			<nav class="options-menu-items">
+				<ul>
+					<li><a href="">all</a></li>
+					<li><a href="">entertainment</a></li>
+					<li><a href="">bars & clubs</a></li>
+					<li><a href="">food & drink</a></li>
+				</ul>
+			</nav>
+
+			<div id="map"></div>
+		
+		</main>
+
+		<!-- ======= FOOTER ======= -->
+		<footer class="row footer">
+			<div class="col-xs-3"></div>
+			<div class="col-xs-6 text-center">
+				<div class="img-cont">
+					<img src="media/images/footer.png" alt="Deal Seeker Footer">
+				</div>
+			</div>
+			<div class="col-xs-3 text-right">
+				<button class="menu help-menu">help</button>
+			</div>
+		</footer>
+	</div>
+		
+	<!-- JQUERY & BOOTSTRAP JS -->	
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/bootstrap/bootstrap-3.3.1/js/bootstrap.min.js"></script>
+
+	<!-- GOOGLE MAPS -->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+	<!-- MY JS -->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
