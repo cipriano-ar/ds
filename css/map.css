@@ -1,9 +1,9 @@
-main {
+.main {
 	position: relative;
 }
 
 #map {
-	height: 450px;
+	height: 80%;
 }
 
 /* ------- Menu items ------- */
@@ -31,6 +31,7 @@ main {
 
 .days-menu-items li, .options-menu-items li {
 	text-transform: capitalize;
+	border-bottom: 1px solid #ffffff;
 }
 
 .days-menu-items a, .options-menu-items a {
@@ -40,6 +41,6 @@ main {
 	display: block;
 }
 
-.days-menu-items a, .options-menu-items a {
+.days-menu-items a:hover, .options-menu-items a:hover {
 	
 }

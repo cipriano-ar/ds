@@ -5,7 +5,7 @@
 *	$whitePlain				#ffffff	rgb(255,255,255)
 */
 
-html, body {
+html, body, .container, .main {
 	height: 100%;
 }
 .container {
@@ -13,8 +13,9 @@ html, body {
 }
 
 .header, .footer {
-	background: #353535;
-	padding:0.5em 0;
+	background: #2D2D2D;
+	padding: 2% 2% 2% 2%;
+	height: 32px;
 }
 
 /* ++++++++++++++ HEADER ++++++++++++++ */
@@ -25,7 +26,7 @@ html, body {
 }
 
 .days-btn, .options-btn {
-	color:#5C9EFF;
+	color:#F4F0E9;
 }
 
 /* ++++++++++++++ MAP ++++++++++++++ 
@@ -47,12 +48,56 @@ html, body {
 
 .menu-btn {
 	text-transform: uppercase;
-	font-size: 2.5em;
+	font-size: 20px;
 	background: transparent;
 	border: none;
 	border-radius: 5px;
+	max-width: 100%;
 }
 
 img {
 	width:100%;
 }
+
+/* ++++++++++++++ LOGO ++++++++++++++ */
+#seekLogo{position: absolute; z-index: 5; width: 72px; left: 10px;}
+
+
+
+/************************  All Media Queries  ****************************/
+
+/*Mobile*/
+@media(max-width:767px){
+
+	.text-right, .text-left, .options-button{
+	padding: 0px;
+	}
+	.menu-btn {
+	font-size: 18px;
+	padding-right: 10px;
+	}
+
+	.header, .footer {
+	padding: 4%;
+	height: 52px;
+	}
+
+
+}
+
+/*Tablet*/
+@media(min-width:768px){
+
+}
+
+/*Laptop*/
+@media(min-width:992px){
+
+}
+
+/*Desktop*/
+@media(min-width:1200px){
+
+}
+
+

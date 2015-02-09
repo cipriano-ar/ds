@@ -1,15 +1,14 @@
+var map;
+
 init();
 
-var map;
-var hidden;
 function init() {
 	
 	// Map Options
 	var mapOptions = {
-		center: {lat:-34.397,lng:150.644},
-		zoom: 11,
-		scrollwheel:false,
-		marker: {lat:-34.397,lng:150.644}
+		center: {lat:-36.8495452,lng:174.7669572},
+		zoom: 15,
+		scrollwheel:false
 	};
 
 	// Adds the Map with the options
@@ -19,19 +18,26 @@ function init() {
 	// Adds a marker to the map
 	var marker = new google.maps.Marker({
 		map: map,
-		position: {lat:-34.397,lng:150.644}
+		position: {lat:-36.8495452,lng:174.7669572}
 	});
 
 	// Creates an Info Window and set content for it
 	var info_window = new google.maps.InfoWindow();
 	info_window.setContent('<b>Hi Bro!</b>');
 
-	// Adds "click" event to the marker and shows Info Window
+	/* ++++++++++++++ LISTENERS ++++++++++++++ */
+
+	// keeps map centered on resize (responsive)
+	google.maps.event.addDomListener(window,'resize', function(){
+		var center = map.getCenter();
+		google.maps.event.trigger(map, 'resize');
+		map.setCenter(center);
+	});
+
+	// 'click' and shows Info Window
 	marker.addListener('click', function() {
 		info_window.open(map,this);
 	});
-
-	// Swaps visibility of the marker on the map
 	
 	// Slide Menus set up
 	$(menuSlide('.days-btn', '.days-menu-items',300));
