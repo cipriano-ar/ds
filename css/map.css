@@ -1,4 +1,4 @@
-.main {
+main {
 	position: relative;
 }
 
@@ -31,7 +31,6 @@
 
 .days-menu-items li, .options-menu-items li {
 	text-transform: capitalize;
-	border-bottom: 1px solid #ffffff;
 }
 
 .days-menu-items a, .options-menu-items a {
@@ -41,6 +40,6 @@
 	display: block;
 }
 
-.days-menu-items a:hover, .options-menu-items a:hover {
+.days-menu-items a, .options-menu-items a {
 	
 }
