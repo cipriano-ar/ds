@@ -26,7 +26,7 @@ function init() {
 	var info_window = new google.maps.InfoWindow();
 	info_window.setContent('<b>Hi Bro!</b>');
 
-	map.data.loadGeoJson('markers.json');
+	map.data.loadGeoJson('js/markers.json');
 
 	/* ++++++++++++++ LISTENERS ++++++++++++++ */
 
