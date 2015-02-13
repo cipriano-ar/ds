@@ -6,17 +6,16 @@
         		"coordinates": [-36.84911363, 174.76436589]
         	},
         	"properties": {
-        		"prop0": "value0"
+        		"name": "Marker 1"
         	}
       },
       { 	"type": "Feature",
         	"geometry": {
-         	"type": "Point",
-         	"coordinates": [-36.8495452, 174.7669572]
+           	"type": "Point",
+           	"coordinates": [-36.8495452, 174.7669572]
          },
         	"properties": {
-         	"prop0": "value0",
-         	"prop1": 0.0
+         	"name": "Marker 2"
          }
       }
    ]
