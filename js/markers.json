@@ -1,24 +1,3 @@
-// {
-// 	"marker1": {
-// 		"name": "Dominos Pizza",
-// 	  	"icon": "./media/images/markers/bar-marker.png",
-// 	  	"geometry": {
-// 	  		"type": "Point",
-// 	      "lat": "-36.84911363",
-// 	      "lng": "174.76436589"
-// 	  	}
-// 	},
-// 	"marker2": {
-// 		"name": "Super Bar",
-// 	  	"icon": "./media/images/markers/event-marker.png",
-// 	  	"geometry": {
-// 	  		"type": "Point",
-// 	      "lat": "-36.8495452",
-// 	      "lng": "174.7669572"
-// 	  	}
-// 	}
-// }
-
 { 	"type": "FeatureCollection",
    "features": [
       { 	"type": "Feature",
