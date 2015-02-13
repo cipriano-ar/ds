@@ -28,6 +28,7 @@ function init() {
 	info_window.setContent('<b>Hi Bro!</b>');
 
 	map.data.loadGeoJson('js/markers.json');
+
 	// $.getJSON("js/markers.json", function(json_data) {
 	// 	var icon_path, latlng;
 	// 	$.each(json_data, function(key,value) {
