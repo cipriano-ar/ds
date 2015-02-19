@@ -55,7 +55,7 @@ function createModals() {
 		var info_window = new google.maps.InfoWindow();
 		info_window.setContent(window_content);
 		info_window.setPosition(event.latLng);
-		info_window.setOptions({pixelOffset: new google.maps.Size(0,0)});
+		info_window.setOptions({pixelOffset: new google.maps.Size(0,12)});
 		info_window.open(map);
 	});
 }
