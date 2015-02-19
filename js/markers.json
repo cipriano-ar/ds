@@ -70,7 +70,7 @@
     	"properties": {
      	  "name": "The Cloud Event Center",
         "description":"DealSeeker staff party.",
-        "icon": "media/images/markers/food-marker.png"
+        "icon": "media/images/markers/event-marker.png"
       }
     }
  	]
