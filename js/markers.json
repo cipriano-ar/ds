@@ -1,40 +1,41 @@
 { 	
   "type": "FeatureCollection",
-    "features": [
-      { 	
-        "type": "Feature",
-      	"geometry": {
-      		"type": "Point",
-      		"coordinates": [174.76436589,-36.84911363]
-      	},
-      	"properties": {
-      		"name": "Domino's Pizza",
-          "description":"Domino's Pizza",
-          "icon": "media/images/markers/food-marker.png"
-      	}
+  "features": [
+    { 	
+      "type": "Feature",
+    	"geometry": {
+    		"type": "Point",
+    		"coordinates": [174.76436589,-36.84911363]
+    	},
+    	"properties": {
+    		"name": "Domino's Pizza",
+        "description":"Domino's Pizza",
+        "icon": "media/images/markers/food-marker.png"
+    	}
+    },
+    { 	
+      "type": "Feature",
+    	"geometry": {
+       	"type": "Point",
+       	"coordinates": [174.7669572,-36.8495452]
       },
-      { 	
-        "type": "Feature",
-      	"geometry": {
-         	"type": "Point",
-         	"coordinates": [174.7669572,-36.8495452]
-        },
-      	"properties": {
-       	  "name": "Random",
-          "description":"Random Marker",
-          "icon": "media/images/markers/bar-marker.png"
-        },
-        { 	
-        "type": "Feature",
-      	"geometry": {
-         	"type": "Point",
-         	"coordinates": [174.760639,-36.852801]
-        },
-      	"properties": {
-       	  "name": "Rendezvous Hotel",
-          "description":"Rendezvous Hotel Auckland",
-          "icon": "media/images/markers/event-marker.png"
-        }
+    	"properties": {
+     	  "name": "Random",
+        "description":"Random Marker",
+        "icon": "media/images/markers/bar-marker.png"
       }
-   ]
+    },
+    { 	
+      "type": "Feature",
+    	"geometry": {
+       	"type": "Point",
+       	"coordinates": [174.760639,-36.852801]
+      },
+    	"properties": {
+     	  "name": "Rendezvous Hotel",
+        "description":"Rendezvous Hotel Auckland",
+        "icon": "media/images/markers/event-marker.png"
+      }
+    }
+ 	]
 }
