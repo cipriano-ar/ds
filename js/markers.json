@@ -72,6 +72,18 @@
         "description":"DealSeeker staff party.",
         "icon": "media/images/markers/event-marker.png"
       }
+    },
+    { 	
+      "type": "Feature",
+    	"geometry": {
+       	"type": "Point",
+       	"coordinates": [174.7675566,-36.841706]
+      },
+    	"properties": {
+     	  "name": "Academy Cinemas",
+        "description":"2 x 1 tickets.",
+        "icon": "media/images/markers/event-marker.png"
+      }
     }
  	]
 }
