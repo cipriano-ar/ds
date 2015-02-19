@@ -36,6 +36,42 @@
         "description":"Rendezvous Hotel Auckland",
         "icon": "media/images/markers/event-marker.png"
       }
+    },
+    { 	
+      "type": "Feature",
+    	"geometry": {
+       	"type": "Point",
+       	"coordinates": [174.761967,-36.848684]
+      },
+    	"properties": {
+     	  "name": "Skycity Bar",
+        "description":"Skycity Bar super deals.",
+        "icon": "media/images/markers/bar-marker.png"
+      }
+    },
+    { 	
+      "type": "Feature",
+    	"geometry": {
+       	"type": "Point",
+       	"coordinates": [174.76459,-36.843044]
+      },
+    	"properties": {
+     	  "name": "Copthorne Restaurant",
+        "description":"Copthorne buffet meals.",
+        "icon": "media/images/markers/food-marker.png"
+      }
+    },
+    { 	
+      "type": "Feature",
+    	"geometry": {
+       	"type": "Point",
+       	"coordinates": [174.7675566,-36.841706]
+      },
+    	"properties": {
+     	  "name": "The Cloud Event Center",
+        "description":"DealSeeker staff party.",
+        "icon": "media/images/markers/food-marker.png"
+      }
     }
  	]
 }
