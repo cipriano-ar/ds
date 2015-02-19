@@ -8,9 +8,9 @@
       		"coordinates": [174.76436589,-36.84911363]
       	},
       	"properties": {
-      		"name": "Marker 1",
-          "description":"Description 1",
-          "icon": "media/images/markers/bar-marker.png"
+      		"name": "Domino's Pizza",
+          "description":"Domino's Pizza",
+          "icon": "media/images/markers/food-marker.png"
       	}
       },
       { 	
@@ -20,8 +20,19 @@
          	"coordinates": [174.7669572,-36.8495452]
         },
       	"properties": {
-       	  "name": "Marker 2",
-          "description":"Description 2",
+       	  "name": "Random",
+          "description":"Random Marker",
+          "icon": "media/images/markers/bar-marker.png"
+        },
+        { 	
+        "type": "Feature",
+      	"geometry": {
+         	"type": "Point",
+         	"coordinates": [174.760639,-36.852801]
+        },
+      	"properties": {
+       	  "name": "Rendezvous Hotel",
+          "description":"Rendezvous Hotel Auckland",
           "icon": "media/images/markers/event-marker.png"
         }
       }
