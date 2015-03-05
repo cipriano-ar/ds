@@ -10,7 +10,7 @@
     	"properties": {
     		"name": "Domino's Pizza",
         "description":"Domino's Pizza",
-        "icon": "media/images/markers/food-marker.png"
+        "icon": "../media/images/markers/food-marker.png"
     	}
     },
     { 	
