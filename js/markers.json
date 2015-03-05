@@ -1,44 +1,89 @@
-// {
-// 	"marker1": {
-// 		"name": "Dominos Pizza",
-// 	  	"icon": "./media/images/markers/bar-marker.png",
-// 	  	"geometry": {
-// 	  		"type": "Point",
-// 	      "lat": "-36.84911363",
-// 	      "lng": "174.76436589"
-// 	  	}
-// 	},
-// 	"marker2": {
-// 		"name": "Super Bar",
-// 	  	"icon": "./media/images/markers/event-marker.png",
-// 	  	"geometry": {
-// 	  		"type": "Point",
-// 	      "lat": "-36.8495452",
-// 	      "lng": "174.7669572"
-// 	  	}
-// 	}
-// }
-
-{ 	"type": "FeatureCollection",
-   "features": [
-      { 	"type": "Feature",
-        	"geometry": {
-        		"type": "Point",
-        		"coordinates": [-36.84911363, 174.76436589]
-        	},
-        	"properties": {
-        		"prop0": "value0"
-        	}
+{ 	
+  "type": "FeatureCollection",
+  "features": [
+    { 	
+      "type": "Feature",
+    	"geometry": {
+    		"type": "Point",
+    		"coordinates": [174.76436589,-36.84911363]
+    	},
+    	"properties": {
+    		"name": "Domino's Pizza",
+        "description":"Domino's Pizza",
+        "icon": "media/images/markers/food-marker.png"
+    	}
+    },
+    { 	
+      "type": "Feature",
+    	"geometry": {
+       	"type": "Point",
+       	"coordinates": [174.7669572,-36.8495452]
       },
-      { 	"type": "Feature",
-        	"geometry": {
-         	"type": "Point",
-         	"coordinates": [-36.8495452, 174.7669572]
-         },
-        	"properties": {
-         	"prop0": "value0",
-         	"prop1": 0.0
-         }
+    	"properties": {
+     	  "name": "Random",
+        "description":"Random Marker",
+        "icon": "media/images/markers/bar-marker.png"
       }
-   ]
+    },
+    { 	
+      "type": "Feature",
+    	"geometry": {
+       	"type": "Point",
+       	"coordinates": [174.760639,-36.852801]
+      },
+    	"properties": {
+     	  "name": "Rendezvous Hotel",
+        "description":"Rendezvous Hotel Auckland",
+        "icon": "media/images/markers/event-marker.png"
+      }
+    },
+    { 	
+      "type": "Feature",
+    	"geometry": {
+       	"type": "Point",
+       	"coordinates": [174.761967,-36.848684]
+      },
+    	"properties": {
+     	  "name": "Skycity Bar",
+        "description":"Skycity Bar super deals.",
+        "icon": "media/images/markers/bar-marker.png"
+      }
+    },
+    { 	
+      "type": "Feature",
+    	"geometry": {
+       	"type": "Point",
+       	"coordinates": [174.76459,-36.843044]
+      },
+    	"properties": {
+     	  "name": "Copthorne Restaurant",
+        "description":"Copthorne buffet meals.",
+        "icon": "media/images/markers/food-marker.png"
+      }
+    },
+    { 	
+      "type": "Feature",
+    	"geometry": {
+       	"type": "Point",
+       	"coordinates": [174.7675566,-36.841706]
+      },
+    	"properties": {
+     	  "name": "The Cloud Event Center",
+        "description":"DealSeeker staff party.",
+        "icon": "media/images/markers/event-marker.png"
+      }
+    },
+    { 	
+      "type": "Feature",
+    	"geometry": {
+       	"type": "Point",
+       	"coordinates": [174.765393,-36.851698]
+      },
+    	"properties": {
+     	  "name": "Academy Cinemas",
+        "description":"2 x 1 tickets.",
+        "icon": "media/images/markers/event-marker.png"
+      }
+    }
+ 	]
 }

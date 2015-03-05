@@ -1,45 +1,5 @@
-main {
-	position: relative;
-}
-
 #map {
-	height: 80%;
+	height: 100%;
+	width: 100%;
 }
 
-/* ------- Menu items ------- */
-
-.days-menu-items, .options-menu-items {
-	font-size: 1.5em;
-	background: rgba(122, 176, 231,0.8);
-	display: none;
-	position: absolute;
-	z-index: 2;
-}
-
-.days-menu-items {
-	left: 0;
-}
-
-.options-menu-items {
-	right: 0;
-}
-
-.days-menu-items ul, .options-menu-items ul {
-	list-style: none;
-	padding:0;
-}
-
-.days-menu-items li, .options-menu-items li {
-	text-transform: capitalize;
-}
-
-.days-menu-items a, .options-menu-items a {
-	color: #ffffff;
-	text-decoration: none;
-	padding: 1em;
-	display: block;
-}
-
-.days-menu-items a, .options-menu-items a {
-	
-}

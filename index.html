@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-3.3.1/css/bootstrap.min.css">
 
 	<!-- MY STYLES -->
+	<link rel="stylesheet" href="css/map.css">
 	<link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -20,22 +21,22 @@
 
 	<div class="container">
 		<!-- ======= HEADER ======= -->
-		<header class="row header">
+		<header class="row">
 
 			<!-- Days Menu -->
-			<div class="col-xs-3 text-left">
+			<div class="col-xs-4 text-left pad-free-col">
 				<button class="menu-btn days-btn">days</button>
 			</div>
 
 			<!-- Logo -->
-			<div class="col-xs-6 logo">
+			<div class="col-xs-4 logo" id="logo-lift">
 				<div class="img-cont">
-					<img src="media/images/logo.png" alt="Deal Seeker Logo">
+					<img src="media/images/logo.png" alt="DealSeeker Logo">
 				</div>
 			</div>
 
 			<!-- Options Menu -->
-			<div class="col-xs-3 text-right">
+			<div class="col-xs-4 text-right pad-free-col">
 				<button class="menu-btn options-btn">options</button>
 			</div>
 		</header>
@@ -46,24 +47,24 @@
 
 			<!-- Days Menu Items -->
 			<nav class="days-menu-items">
-				<ul>
-					<li><a href="">monday</a></li>
-					<li><a href="">tuesday</a></li>
-					<li><a href="">wednesday</a></li>
-					<li><a href="">thursday</a></li>
-					<li><a href="">friday</a></li>
-					<li><a href="">saturday</a></li>
-					<li><a href="">sunday</a></li>
+				<ul class="inner-menu">
+					<li class="opaque"><a href="">MONDAY</a></li>
+					<li class="opaque"><a href="">TUESDAY</a></li>
+					<li class="opaque"><a href="">WEDNESDAY</a></li>
+					<li class="opaque"><a href="">THURSDAY</a></li>
+					<li class="opaque"><a href="">FRIDAY</a></li>
+					<li class="opaque"><a href="">SATURDAY</a></li>
+					<li class="opaque"><a href="">SUNDAY</a></li>
 				</ul>
 			</nav>
 
 			<!-- Options Menu Items -->
 			<nav class="options-menu-items">
-				<ul>
-					<li><a href="">all</a></li>
-					<li><a href="">entertainment</a></li>
-					<li><a href="">bars & clubs</a></li>
-					<li><a href="">food & drink</a></li>
+				<ul class="inner-menu">
+					<li class="opaque"><a href="">ALL</a></li>
+					<li class="opaque"><a href="">ENTERTAINMENT</a></li>
+					<li class="opaque"><a href="">BARS & CLUBS</a></li>
+					<li class="opaque"><a href="">FOOD & DRINK</a></li>
 				</ul>
 			</nav>
 
@@ -72,18 +73,19 @@
 		</main>
 
 		<!-- ======= FOOTER ======= -->
-		<footer class="row footer">
+	
+		<footer class="row">
 			<div class="col-xs-3"></div>
-			<div class="col-xs-6 text-center">
+			<div class="col-xs-6">
 				<div class="img-cont">
-					<img src="media/images/footer.png" alt="Deal Seeker Footer">
+					<img src="media/images/footer.png" alt="DealSeeker Footer">
 				</div>
 			</div>
-			<div class="col-xs-3 text-right">
-				<button class="menu-btn help-btn">help</button>
+			<div class="col-xs-3 text-right pad-free-col">
+				<button class="menu-btn">help</button>
 			</div>
 		</footer>
-	</div>
+	</div> <!-- .container ends -->
 		
 	<!-- JQUERY & BOOTSTRAP JS -->	
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>

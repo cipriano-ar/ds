@@ -1,32 +1,112 @@
-@import url(map.css);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600);
 
 /*
 *	$header-black			#353535	rgb(53, 53, 53)
 *	$whitePlain				#ffffff	rgb(255,255,255)
+*	$menu-btn-color		#F4F0E9
 */
 
 html, body, .container, main {
-	height: 100%;
-}
-.container {
-	max-width:960px;
-}
+	height: 100%; }
 
-.header, .footer {
-	background: #353535;
-	padding:0.5em 0;
-}
+.container {
+	max-width:768px;
+	position: relative; }
+
+header, footer {
+	background: #2d2d2d;
+	height: 50px; }
 
 /* ++++++++++++++ HEADER ++++++++++++++ */
 
-.logo > .img-cont {
-	margin:0 auto;
-	max-width: 65px;
+header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 15px;
+	z-index: 2;
 }
 
-.days-btn, .options-btn {
-	color:#5C9EFF;
+.logo .img-cont {
+	max-width: 55px;
+	/*position: absolute;
+	z-index: 10;
+	left: 22%;*/ }
+
+/* ++++++++++++++ MENU ++++++++++++++ */
+/* Used with js for menu hover opacity removal. */
+
+main {
+	margin-top: 50px;
+	position: relative;
 }
+
+.inner-menu li {
+	background-color: #5c9eff;
+}
+
+.opaque {
+	opacity: 0.8;
+}
+
+.days-menu-items {	
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	display: none;
+	position: absolute;
+	z-index: 1;
+	width: 48%;
+	font-weight: 300;
+}
+
+.options-menu-items {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	display: none;
+	position: absolute;
+	z-index: 1;
+	width: 48%;
+	font-weight: 300;
+	text-align: right;
+}
+
+.inner-menu li.opaque a {
+	padding-right: 3%;
+}
+
+
+.days-menu-items {
+	left: 0;
+}
+
+.options-menu-items {
+	right: 0;
+}
+
+.days-menu-items ul, .options-menu-items ul {
+	list-style: none;
+	padding:0;
+}
+
+.days-menu-items li, .options-menu-items li {
+	text-transform: capitalize;
+}
+
+.days-menu-items a, .options-menu-items a {
+	color: #ffffff;
+	text-decoration: none;
+	padding: 5px;
+	display: block;
+}
+
+.days-menu-items a, .options-menu-items a {
+	border-top: 1px solid #5082F2;
+}
+
+.inner-menu {
+	margin-bottom: 0px;
+}
+
 
 /* ++++++++++++++ MAP ++++++++++++++ 
 
@@ -34,25 +114,73 @@ html, body, .container, main {
 
  ++++++++++++++ FOOTER ++++++++++++++ */
 
-.footer .img-cont {
+/*.navbar-fixed-bottom {
+	background-color: #2d2d2d;
 	margin:0 auto;
-	max-width: 300px;
-}
+	height: 50px;
+	bottom: 5px;
+}*/
 
-.help-btn {
-	color: #ffffff;
+footer .img-cont {
+ 	margin-top: 5px;
+ 	width: 150px;
 }
 
 /* ++++++++++++++ GENERAL CLASSES ++++++++++++++ */
 
 .menu-btn {
+	color:#F4F0E9;
+	font-size: 1.5em;
 	text-transform: uppercase;
-	font-size: 2.5em;
 	background: transparent;
-	border: none;
-	border-radius: 5px;
-}
+	padding-top: 5px;
+	border: none; }
+
+.pad-free-col {
+	padding-right: 0px;
+	padding-left: 0px; }
+
+.img-cont {
+	margin-right: auto;
+	margin-left: auto; }
 
 img {
-	width:100%;
+	width:100%; }
+
+
+/**************************
+-----  Media Queries  -----
+***************************/
+
+@media screen and (min-width: 580px) {
+	.logo .img-cont {
+		max-width: 65px; }
+
+	.menu-btn {
+		font-size: 2.5em;
+		padding-top: 0px; }
+
+	footer .img-cont {
+		width: 200px; }
 }
+
+/*Mobile*/
+/*@media(max-width:768px){
+
+	.text-right, .text-left, .options-button{
+	padding: 0px;
+	}
+	.menu-btn {
+	margin-top: 4%;
+	font-size: 22px;
+	padding-right: 10px;
+	font-weight: bold;
+	}
+
+	header, footer {
+	padding: 4% 4% 1% 1%;
+	height: 52px;
+	}
+
+
+}*/
