@@ -1,4 +1,3 @@
-
 var map;
 var menu_slide_duration = 300;
 var logo_container = '.logo img';
@@ -165,5 +164,3 @@ function changeOpacity(){
 		console.log('off');
 	});
 }
-
-
