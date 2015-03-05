@@ -79,7 +79,7 @@ function loadMarkers() {
 	map.data.setStyle(function(feature) {
 		return {icon:feature.getProperty('icon')};
 	});
-	hideMarkers();
+	//hideMarkers();
 }
 
 //SHOW MARKERS
