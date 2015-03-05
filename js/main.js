@@ -11,6 +11,7 @@ function init() {
 
 	loadMap();
 	loadMenus();
+	loadMarkers();
 	logoOnClick();
 	createModals();
 	makeMapResponsive();
@@ -78,6 +79,7 @@ function loadMarkers() {
 	map.data.setStyle(function(feature) {
 		return {icon:feature.getProperty('icon')};
 	});
+	hideMarkers();
 }
 
 //SHOW MARKERS
