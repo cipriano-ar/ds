@@ -85,9 +85,9 @@ function loadMarkers() {
 //SHOW MARKERS
 function showMarkers() {
 	map.data.setStyle({ visible:true });
-	map.data.setStyle(function(feature) {
-		return {icon:feature.getProperty('icon')};
-	});
+	// map.data.setStyle(function(feature) {
+	// 	return {icon:feature.getProperty('icon')};
+	// });
 }
 
 // HIDE MARKERS
