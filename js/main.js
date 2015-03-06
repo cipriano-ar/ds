@@ -22,6 +22,10 @@ function init() {
 
 /* |||||||||||||| FUNCTION DECLARATIONS |||||||||||||| */
 
+/*++++++++++++++++++
+	MENUES
+++++++++++++++++++++*/
+
 // TOGGLE MENU ON CLICK
 function menuSlideOnClick(button, navigation, slide_duration) {
 	$(button).click(function(){
@@ -43,6 +47,26 @@ function loadMenus() {
 		$('.options-btn').click();
 	},2500);
 }
+
+//HIDE MENUS
+function hideMenus() {
+	$(days_menu_items).slideUp(menu_slide_duration);
+	$(options_menu_items).slideUp(menu_slide_duration);
+}
+
+//SHOW MENUS
+function showMenus() {
+	if ( $(days_menu_items).css(display) == 'none' ) {
+		$(days_menu_items).toggle(menu_slide_duration)
+	}
+	if ( $(options_menu_items).css(display) == 'none' ) {
+		$(options_menu_items).toggle(menu_slide_duration)
+	}
+}
+
+/*+++++++++++++++++++
+	MAP
++++++++++++++++++++++*/
 
 // LOAD MAP
 function loadMap() {
@@ -92,7 +116,7 @@ function hideMarkers() {
 	map.data.setStyle({ visible:false });
 }
 
-// logo click. SHOW ALL MARKERS AND HIDE MENUS
+// logo click. SHOW/HIDE MARKERS AND MENUS
 function logoOnClick() {
 	$(logo_container).click(function() {
 		if ( markers_visible ) {
@@ -104,35 +128,6 @@ function logoOnClick() {
 			hideMenus();
 			markers_visible = true;
 		}
-	});
-}
-
-//SHOW MENUS
-function showMenus() {
-	if ( $(days_menu_items).css(display) == 'none' ) {
-		$(days_menu_items).toggle(menu_slide_duration)
-	}
-	if ( $(options_menu_items).css(display) == 'none' ) {
-		$(options_menu_items).toggle(menu_slide_duration)
-	}
-}
-
-//HIDE MENUS
-function hideMenus() {
-	$(days_menu_items).slideUp(menu_slide_duration);
-	$(options_menu_items).slideUp(menu_slide_duration);
-}
-
-
-// CREATE MODALS
-function createModals() {
-	map.data.addListener('click',function(event) {
-		var window_content = event.feature.getProperty('description');
-		var info_window = new google.maps.InfoWindow();
-		info_window.setContent(window_content);
-		info_window.setPosition(event.latLng);
-		info_window.setOptions({pixelOffset: new google.maps.Size(-1,-90)});
-		info_window.open(map);
 	});
 }
 
@@ -151,6 +146,18 @@ function setMapHeight() {
 	$('#map').height(
 		$('body').height() - $('header').height() - $('footer').height()
 	);
+}
+
+// CREATE MODALS
+function createModals() {
+	map.data.addListener('click',function(event) {
+		var window_content = event.feature.getProperty('description');
+		var info_window = new google.maps.InfoWindow();
+		info_window.setContent(window_content);
+		info_window.setPosition(event.latLng);
+		info_window.setOptions({pixelOffset: new google.maps.Size(-1,-90)});
+		info_window.open(map);
+	});
 }
 
 // MAIN MENU OPACITY FIX
