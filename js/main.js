@@ -82,12 +82,14 @@ function loadMarkers() {
 
 //SHOW MARKERS
 function showMarkers() {
-	map.data.revertStyle();
+	map.data.setStyle(function(feature) {
+		return {icon:feature.getProperty('icon')};
+	});
 }
 
 // HIDE MARKERS
 function hideMarkers() {
-	map.data.overrideStyle({ visible:false });
+	map.data.setStyle({ visible:false });
 }
 
 // logo click. SHOW ALL MARKERS AND HIDE MENUS
