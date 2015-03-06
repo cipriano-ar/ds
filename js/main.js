@@ -56,10 +56,10 @@ function hideMenus() {
 
 //SHOW MENUS
 function showMenus() {
-	if ( $(days_menu_items).css(display) == 'none' ) {
+	if ( $(days_menu_items).css('display') == 'none' ) {
 		$(days_menu_items).toggle(menu_slide_duration)
 	}
-	if ( $(options_menu_items).css(display) == 'none' ) {
+	if ( $(options_menu_items).css('display') == 'none' ) {
 		$(options_menu_items).toggle(menu_slide_duration)
 	}
 }
