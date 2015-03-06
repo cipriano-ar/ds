@@ -77,10 +77,7 @@ function loadMap() {
 // LOAD MARKERS
 function loadMarkers() {
 	map.data.loadGeoJson('js/markers.json');
-	map.data.setStyle(function(feature) {
-		return {icon:feature.getProperty('icon')};
-	});
-	hideMarkers();
+	map.data.setStyle({ visible:false });
 }
 
 //SHOW MARKERS
