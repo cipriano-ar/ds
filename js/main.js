@@ -1,4 +1,5 @@
 var map;
+var markers_visible = false;
 var menu_slide_duration = 300;
 var logo_container = '.logo img';
 var days_menu_items = '.days-menu-items';
@@ -84,31 +85,25 @@ function loadMarkers() {
 
 //SHOW MARKERS
 function showMarkers() {
-	//map.data.setStyle({ visible:true });
-	map.data.setStyle(function(feature) {
-		return {icon:feature.getProperty('icon')};
-	});
+	map.data.revertStyle();
 }
 
 // HIDE MARKERS
 function hideMarkers() {
-	map.data.setStyle({ visible:false });
-}
-
-// MAP HAS MARKERS
-function mapHasMarkers() {
-	return false;
+	map.data.overrideStyle({ visible:false });
 }
 
 // logo click. SHOW ALL MARKERS AND HIDE MENUS
 function logoOnClick() {
 	$(logo_container).click(function() {
-		if ( mapHasMarkers() ) {
+		if ( markers_visible ) {
 			hideMarkers();
-			showMenus();		
+			showMenus();
+			markers_visible = false;
 		} else {
 			showMarkers();
 			hideMenus();
+			markers_visible = true;
 		}
 	});
 }
